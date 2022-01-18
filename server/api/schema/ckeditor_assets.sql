@@ -1,4 +1,6 @@
-DROP TABLE IF EXISTS ckeditor_assets;
+DROP TABLE IF EXISTS ckeditor_assets CASCADE;
+DROP INDEX IF EXISTS idx_ckeditor_assetable CASCADE;
+DROP INDEX IF EXISTS idx_ckeditor_assetable_type CASCADE;
 
 CREATE TABLE ckeditor_assets (
     id                  SERIAL PRIMARY KEY NOT NULL,

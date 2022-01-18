@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS authors;
+DROP TABLE IF EXISTS authors CASCADE;
 
 CREATE TABLE authors (
     id              SERIAL PRIMARY KEY NOT NULL,
