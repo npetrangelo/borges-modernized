@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS category_title_list_memberships;
+DROP INDEX IF EXISTS index_category_title_list_memberships_on_category_id;
+DROP INDEX IF EXISTS index_category_title_list_memberships_on_title_list_id;
 
 CREATE TABLE category_title_list_memberships (
     id              SERIAL PRIMARY KEY NOT NULL,

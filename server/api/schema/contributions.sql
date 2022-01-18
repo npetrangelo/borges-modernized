@@ -1,4 +1,7 @@
 DROP TABLE IF EXISTS contributions;
+DROP INDEX IF EXISTS index_contributions_on_author_id_and_title_id;
+DROP INDEX IF EXISTS index_contributions_on_author_id;
+DROP INDEX IF EXISTS index_contributions_on_title_id;
 
 CREATE TABLE contributions(
     id              SERIAL PRIMARY KEY NOT NULL,
